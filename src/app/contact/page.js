@@ -1,3 +1,4 @@
+import ContactForm from '@/components/Contact/ContactForm'
 import LottieAnimation from '@/components/Contact/LottieAnimation'
 import React from 'react'
 
@@ -7,8 +8,11 @@ const Contact = () => {
         <div className='inline-block w-2/5 h-full border-r-2 border-solid border-dark'>
             <LottieAnimation/>
         </div>
-        <div>
-            contact form
+        <div className='w-3/5 flex flex-col items-start justify-center px-16 pb-8'>
+            <h2 className='font-bold capitalize text-4xl'>
+                Let's connect!
+            </h2>
+            <ContactForm/>
         </div>
     </section>
   )
