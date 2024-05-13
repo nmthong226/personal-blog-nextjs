@@ -1,5 +1,6 @@
 import BlogLayoutThree from "@/components/Blog/BlogLayoutThree";
 import Categories from "@/components/Blog/Categories";
+import siteMetadata from "@/utils/siteMetaData";
 import { allBlogs } from "contentlayer/generated";
 import GithubSlugger, { slug } from "github-slugger";
 
@@ -22,6 +23,13 @@ export async function generateStaticParams() {
     })
 
     return paths;
+}
+
+export async function generateMetadata({ params }) {
+    return {
+        title: `${params.slug.replaceAll("-", " ")} Blogs`,
+        description: `Learn more about ${params.slug === "all" ? "web development" : params.slug} through our collection of expert blogs and tutorials`,
+    }
 }
 
 const CategoryPage = ({ params }) => {
