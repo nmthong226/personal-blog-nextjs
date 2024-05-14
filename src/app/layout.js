@@ -58,7 +58,6 @@ export default function RootLayout({ children }) {
               document.documentElement.classList.remove('dark')
             }`
           }
-
         </Script>
         <Header />
         {children}

@@ -8,7 +8,7 @@ export default function ContactForm() {
     console.log(errors);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className='mt-12 text-xl font-medium leading-relaxed font-in'>
+        <form onSubmit={handleSubmit(onSubmit)} className='mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in'>
             Hello! My name is
             <input
                 type="text"
@@ -36,7 +36,7 @@ export default function ContactForm() {
             <input 
             type="submit" 
             value="Send request"
-            className='mt-8 font-medium inline-block capitalize text-xl py-3 px-8 border-2 border-solid border-dark rounded cursor-pointer'/>
+            className='mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer'/>
         </form>
     );
 }
