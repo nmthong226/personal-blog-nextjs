@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useForm } from 'react-hook-form';
-import { DribbbleIcon, GithubIcon, LinkedInIcon, TwitterIcon } from '../Header/Icons';
+import { GithubIcon, LinkedInIcon, TwitterIcon } from '../Header/Icons';
 import Link from 'next/link';
 import siteMetadata from '@/utils/siteMetaData';
 
@@ -27,10 +27,9 @@ const index = () => {
         <input type="submit" className='bg-dark dark:bg-light text-light dark:text-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1' value="Send" />
       </form>
       <div className='flex items-center mt-8 space-x-4'>
+        <a href={siteMetadata.github} className='inline-block w-6 h-6 fill-light'><GithubIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" /></a>
         <a href={siteMetadata.linkedin} className='inline-block w-6 h-6'><LinkedInIcon className="hover:scale-125 transition-all ease duration-200" /></a>
         <a href={siteMetadata.twitter} className='inline-block w-6 h-6'><TwitterIcon className="hover:scale-125 transition-all ease duration-200" /></a>
-        <a href={siteMetadata.github} className='inline-block w-6 h-6 fill-light'><GithubIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" /></a>
-        <a href={siteMetadata.dribbble} className='inline-block w-6 h-6'><DribbbleIcon className="hover:scale-125 transition-all ease duration-200" /></a>
       </div>
       <div className='w-full mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex md:flex-row flex-col
       items-center justify-between'>

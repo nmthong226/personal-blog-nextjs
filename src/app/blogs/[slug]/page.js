@@ -70,6 +70,8 @@ export default function BlogPage({ params }) {
                     width={blog.image.width}
                     height={blog.image.height}
                     className='aspect-square w-full h-full object-center object-cover'
+                    priority
+                    sizes="100vw"
                 />
             </div>
             <BlogDetails blog={blog} slug={params.slug} />
