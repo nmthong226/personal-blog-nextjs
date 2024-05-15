@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
-import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icons'
+import { FacebookIcon, GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icons'
 import siteMetadata from '@/utils/siteMetaData'
 import useThemeSwitch from '../Hooks/useThemeSwitch'
 import { cx } from '@/utils'
@@ -65,6 +65,7 @@ const Header = () => {
         <a href={siteMetadata.github} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Check my profile on Github" target="_blank"><GithubIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" /></a>
         <a href={siteMetadata.linkedin} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via LinkedIn" target="_blank"><LinkedInIcon className="hover:scale-125 transition-all ease duration-200" /></a>
         <a href={siteMetadata.twitter} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via Twitter" target="_blank"><TwitterIcon className="hover:scale-125 transition-all ease duration-200" /></a>
+        <a href={siteMetadata.facebook} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via Twitter" target="_blank"><FacebookIcon className="hover:scale-125 transition-all ease duration-200" /></a>
       </div>
     </header>
   );
