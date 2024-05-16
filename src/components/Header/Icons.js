@@ -410,21 +410,58 @@ export const GithubIcon = ({ className, ...rest }) => {
 };
 
 export const FacebookIcon = ({ className, ...rest }) => (
-  <svg
+<svg
     xmlns="http://www.w3.org/2000/svg"
-    width={42}
-    height={48}
-    viewBox="0 0 42 48"
-    className={cx("w-full h-auto", className)}
+    xmlSpace="preserve"
+    width={24}
+    height={24}
+    viewBox="0 0 210 210"
+    className={cx("w-full h-auto rounded-sm", className)}
     {...rest}
   >
-    <path
-      fill="#3F51B5"
-      d="M42 37a5 5 0 0 1-5 5H11a5 5 0 0 1-5-5V11a5 5 0 0 1 5-5h26a5 5 0 0 1 5 5v26z"
-    />
-    <path
-      fill="#FFF"
-      d="M34.368 25H31v13h-5V25h-3v-4h3v-2.41c.002-3.508 1.459-5.59 5.592-5.59H35v4h-2.287C31.104 17 31 17.6 31 18.723V21h4l-.632 4z"
-    />
+    <g
+      style={{
+        stroke: "none",
+        strokeWidth: 0,
+        strokeDasharray: "none",
+        strokeLinecap: "butt",
+        strokeLinejoin: "miter",
+        strokeMiterlimit: 10,
+        fill: "none",
+        fillRule: "nonzero",
+        opacity: 1,
+      }}
+    >
+      <path
+        d="M85.033 90A4.967 4.967 0 0 0 90 85.033V4.967A4.967 4.967 0 0 0 85.033 0H4.967A4.966 4.966 0 0 0 0 4.967v80.066A4.967 4.967 0 0 0 4.967 90h80.066z"
+        style={{
+          stroke: "none",
+          strokeWidth: 1,
+          strokeDasharray: "none",
+          strokeLinecap: "butt",
+          strokeLinejoin: "miter",
+          strokeMiterlimit: 10,
+          fill: "#3c5a99",
+          fillRule: "nonzero",
+          opacity: 1,
+        }}
+        transform="matrix(2.81 0 0 2.81 1.407 1.407)"
+      />
+      <path
+        d="M50.916 83.204V48.351h11.699l1.752-13.583h-13.45v-8.672c0-3.933 1.092-6.612 6.731-6.612l7.193-.003V7.332c-1.244-.166-5.513-.535-10.481-.535-10.37 0-17.47 6.33-17.47 17.954v10.017H25.16v13.583h11.729v34.853h14.027z"
+        style={{
+          stroke: "none",
+          strokeWidth: 1,
+          strokeDasharray: "none",
+          strokeLinecap: "butt",
+          strokeLinejoin: "miter",
+          strokeMiterlimit: 10,
+          fill: "#fff",
+          fillRule: "nonzero",
+          opacity: 1,
+        }}
+        transform="matrix(2.81 0 0 2.81 1.407 1.407)"
+      />
+    </g>
   </svg>
 )
