@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useForm } from 'react-hook-form';
-import { GithubIcon, LinkedInIcon, TwitterIcon } from '../Header/Icons';
+import { FacebookIcon, GithubIcon, LinkedInIcon, TwitterIcon } from '../Header/Icons';
 import Link from 'next/link';
 import siteMetadata from '@/utils/siteMetaData';
 
@@ -15,9 +15,9 @@ const index = () => {
         Interesting Stories | Updates | Guides
       </h3>
       <p className='mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base'>
-        Subscribe to learn about new technology and updates. Join over 5000+ members community to stay up to date with latest news.
-        © 2023 CodeBucks. All rights reserved.
-        Made with ❤ by CodeBucks
+      Welcome to my cozy corner of the internet! Here, I'm excited to share snippets of my life, thoughts, and adventures.
+      But it's not just about me—I'm eager to connect with new friends! If you'd like to join me on this journey, simply drop your email below, and I'll make sure to reach out. 
+      Can't wait to welcome you into my digital world! 🌟
       </p>
       <form onSubmit={handleSubmit(onSubmit)} className='mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx-4'>
         <input
@@ -30,6 +30,7 @@ const index = () => {
         <a href={siteMetadata.github} className='inline-block w-6 h-6 fill-light'><GithubIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" /></a>
         <a href={siteMetadata.linkedin} className='inline-block w-6 h-6'><LinkedInIcon className="hover:scale-125 transition-all ease duration-200" /></a>
         <a href={siteMetadata.twitter} className='inline-block w-6 h-6'><TwitterIcon className="hover:scale-125 transition-all ease duration-200" /></a>
+        <a href={siteMetadata.facebook} className='inline-block w-6 h-6'><FacebookIcon className="hover:scale-125 transition-all ease duration-200" /></a>
       </div>
       <div className='w-full mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex md:flex-row flex-col
       items-center justify-between'>
