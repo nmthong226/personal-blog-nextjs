@@ -43,7 +43,8 @@ const Header = () => {
               fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300`}
         style={{ top: click ? "1rem" : "-5rem" }}>
         <Link href="/" className="mr-2">Home</Link>
-        <Link href="/feeds" className="mx-2">Feed</Link>
+        <Link href="/newsfeed" className="mx-2">Newsfeed</Link>
+        <Link href="/myblogs" className="mx-2">Blog</Link>
         <Link href="/about" className="mx-2">About</Link>
         <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" : "bg-light text-dark")}
@@ -53,8 +54,9 @@ const Header = () => {
       </nav>
       <nav className="w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center hidden sm:flex fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50">
         <Link href="/" className="mr-2">Home</Link>
-        <Link href="/feeds" className="mx-2">Feed</Link>
-        <Link href="/about" className="mx-2">About</Link>
+        <Link href="/newsfeed" className="mx-2">Newsfeed</Link>
+        <Link href="/myblogs" className="mx-2">Blog</Link>
+        <Link href="/about" className="mx-2">Me</Link>
         <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" : "bg-light text-dark")}
           aria-label="theme-switcher">
