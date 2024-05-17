@@ -1,13 +1,9 @@
-import FeaturePosts from "@/components/Home/FeaturePosts";
-import HomeCoverSection from "@/components/Home/HomeCoverSection";
-import RecentPosts from "@/components/Home/RecentPosts";
-import {allBlogs} from "contentlayer/generated";
+import Cover from "@/components/Home/Cover";
+
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center">
-      <HomeCoverSection blogs={allBlogs}/>
-      <FeaturePosts blogs={allBlogs}/>
-      <RecentPosts blogs={allBlogs}/>
+      <Cover/>
     </main>
   )
 }
