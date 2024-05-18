@@ -14,6 +14,10 @@ module.exports = {
         accent: "#7B00D3", 
         accentDark: "#ffdb4d",
         gray: "#747474",
+        darkBlue: "#003fff",
+        lightBlue: "#1cbaef",
+        purpleBlue: "#6961F6",
+        purplePink: "#D5256C"
       },
       fontFamily: {
         mr: ["var(--font-mr)"],
