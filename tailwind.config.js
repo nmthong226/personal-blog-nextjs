@@ -17,7 +17,8 @@ module.exports = {
         darkBlue: "#003fff",
         lightBlue: "#1cbaef",
         purpleBlue: "#6961F6",
-        purplePink: "#D5256C"
+        purplePink: "#D5256C",
+        beige: '#f2f1ef',
       },
       fontFamily: {
         mr: ["var(--font-mr)"],
