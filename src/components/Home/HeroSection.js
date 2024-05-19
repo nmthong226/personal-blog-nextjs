@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import avatar from "../../../public/avatar.jpg"
+import avatar from "../../../public/portrait-au.png";
 import { TypeAnimation } from 'react-type-animation';
 import { IconDownload, IconLink } from '@tabler/icons-react';
 
@@ -28,7 +28,7 @@ const HeroSection = () => {
                     />
                 </h1>
                 <p className='text-dark dark:text-light text-base md:text-lg lg:text-xl'>
-                    I kinda love sharing things, so this is my be-side place to 
+                    I kinda love sharing things, so this is my be-side place to
                     share my own memories and stories. Welcome to my living page!
                 </p>
                 <div className='flex xs:flex-row flex-col'>
@@ -46,7 +46,7 @@ const HeroSection = () => {
                 <Image
                     src={avatar}
                     alt='my-avatar'
-                    className='w-full h-full object-center object-cover rounded-2xl'
+                    className='h-auto w-auto aspect-square object-center object-cover rounded-full border border-solid border-black p-2 dark:border-light'
                     priority
                 />
             </div>
