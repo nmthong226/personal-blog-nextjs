@@ -1,11 +1,16 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import avatar from "../../../public/portrait-au.png";
 import { TypeAnimation } from 'react-type-animation';
 import { IconDownload, IconLink } from '@tabler/icons-react';
+import ParticlesContainer from '../Elements/Particles';
 
 const HeroSection = () => {
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     return (
         <section className='group h-auto lg:h-[85vh] grid grid-cols-1 lg:grid-cols-12 items-center justify-center text-dark dark:text-light border rounded-2xl border-dark dark:border-light mx-5 sm:mx-10 bg-beige dark:bg-dark'>
             <div className='order-2 lg:order-1 col-span-12 lg:col-span-7 px-10 sxl:px-0 sxl:pl-10 space-y-2 xs:space-y-8 mb-2 xs:mb-10 lg:mb-0'>
@@ -46,7 +51,7 @@ const HeroSection = () => {
                 <Image
                     src={avatar}
                     alt='my-avatar'
-                    className='h-auto w-auto aspect-square object-center object-cover rounded-full border border-solid border-black p-2 dark:border-light'
+                    className='h-auto w-auto aspect-square object-center object-cover rounded-full border border-solid border-black p-2 dark:border-light z-10'
                     priority
                 />
             </div>

@@ -1,4 +1,5 @@
 import InsightRoll from '@/components/About/InsightRoll';
+import Transition from '@/components/Elements/Transition';
 import React from 'react'
 
 const insights = [
@@ -14,6 +15,7 @@ const insights = [
 const AboutLayout = ({ children }) => {
     return (
         <main className='w-full flex flex-col items-center justify-between'>
+            <Transition />
             <InsightRoll insights={insights} />
             {children}
         </main>
