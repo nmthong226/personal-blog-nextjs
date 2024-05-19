@@ -39,9 +39,9 @@ const Header = () => {
           </div>
         </div>
       </button>
-      <nav className={`w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize items-center flex sm:hidden
-              fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50 transition-all ease duration-300`}
-        style={{ top: click ? "1rem" : "-5rem" }}>
+      <nav className={`w-full py-3 px-4 sm:px-8 font-medium capitalize items-center border-t-2 justify-center flex sm:hidden
+        fixed bottom-6 right-1/2 translate-x-1/2 bg-light backdrop-blur-sm z-50 transition-all ease duration-300`}
+        style={{ bottom: click ? "0rem" : "-5rem" }}>
         <Link href="/" className="mr-2">Home</Link>
         <Link href="/newsfeed" className="mx-2">Newsfeed</Link>
         <Link href="/myblogs" className="mx-2">Blog</Link>
