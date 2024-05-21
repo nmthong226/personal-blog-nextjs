@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 import avatar from "../../../public/portrait-au.png";
 import { TypeAnimation } from 'react-type-animation';
 import { IconDownload, IconLink } from '@tabler/icons-react';
-import ParticlesContainer from '../Elements/Particles';
 
 const HeroSection = () => {
     const [mounted, setMounted] = useState(false);
@@ -41,10 +40,14 @@ const HeroSection = () => {
                         <IconLink className='mr-2' />
                         My portfolio
                     </button>
-                    <button className='flex p-4 border border-dark dark:border-light rounded-lg bg-light dark:bg-dark '>
+                    <a 
+                        className='flex p-4 border border-dark dark:border-light rounded-lg bg-light dark:bg-dark' 
+                        href={"https://drive.google.com/file/d/1xwd676XCvKHGnHfjA5NpHWikdc0MpbF-/view?usp=sharing"}
+                        target='_blank'
+                    >
                         <IconDownload className='mr-2' />
-                        Download CV
-                    </button>
+                        My Resume
+                    </a>
                 </div>
             </div>
             <div className='order-1 lg:order-2 col-span-12 lg:col-span-5 p-2 xs:p-10 flex justify-center'>
