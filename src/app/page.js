@@ -1,4 +1,3 @@
-import ParticlesContainer from "@/components/Elements/Particles";
 import Transition from "@/components/Elements/Transition";
 import HeroSection from "@/components/Home/HeroSection";
 

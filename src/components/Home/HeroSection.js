@@ -40,14 +40,30 @@ const HeroSection = () => {
                         <IconLink className='mr-2' />
                         My portfolio
                     </button>
-                    <a 
-                        className='flex p-4 border border-dark dark:border-light rounded-lg bg-light dark:bg-dark' 
+                    <a
+                        className='flex p-4 border border-dark dark:border-light rounded-lg bg-light dark:bg-dark'
                         href={"https://drive.google.com/file/d/1xwd676XCvKHGnHfjA5NpHWikdc0MpbF-/view?usp=sharing"}
                         target='_blank'
                     >
                         <IconDownload className='mr-2' />
                         My Resume
                     </a>
+                </div>
+                <div className='flex flex-col lg:grid lg:grid-cols-2 lg:space-x-2'>
+                    <div className='bg-white rounded-lg'>
+                        a
+                    </div>
+                    <div className='bg-white rounded-lg'>
+                        a
+                    </div>
+                </div>
+                <div className='flex flex-col lg:grid lg:grid-cols-2 lg:space-x-2'>
+                    <div className='bg-white rounded-lg'>
+                        a
+                    </div>
+                    <div className='bg-white rounded-lg'>
+                        a
+                    </div>
                 </div>
             </div>
             <div className='order-1 lg:order-2 col-span-12 lg:col-span-5 p-2 xs:p-10 flex justify-center'>
