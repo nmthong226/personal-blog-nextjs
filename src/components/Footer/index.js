@@ -8,9 +8,8 @@ import siteMetadata from '@/utils/siteMetaData';
 const index = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
-  console.log(errors);
   return (
-    <footer className='mt-16 rounded-2xl bg-dark dark:bg-accentDark m-5 sm:m-10 flex flex-col items-center text-light dark:text-dark'>
+    <footer className='rounded-2xl bg-dark dark:bg-accentDark m-5 sm:m-10 flex flex-col items-center text-light dark:text-dark'>
       <h3 className='mt-16 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4'>
         This is my story
       </h3>
