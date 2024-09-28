@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import siteMetadata from '@/utils/siteMetaData';
 import ThemeScript from './ThemeScript';
+import App from './App';
 
 const inter = Inter({ subsets: ['latin'], display: "swap", variable: "--font-in" });
 const manRope = Manrope({ subsets: ['latin'], display: "swap", variable: "--font-mr" });
@@ -49,11 +50,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cx(inter.variable, manRope.variable, "font-mr bg-light dark:bg-dark")}>
+      <body className={cx(inter.variable, manRope.variable, "font-mr bg-gray-100 dark:bg-dark h-screen w-full")}>
         <ThemeScript/>
-        <Header />
-        {children}
-        <Footer />
+        <App children={children}/>
       </body>
     </html>
   )
