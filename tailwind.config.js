@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         dark: "#1b1b1b",
         light: "#fff",
-        accent: "#7B00D3", 
+        accent: "#7B00D3",
         accentDark: "#ffdb4d",
         darkBlue: "#003fff",
         lightBlue: "#1cbaef",
@@ -24,15 +24,20 @@ module.exports = {
         in: ["var(--font-in)"],
       },
       animation: {
-        roll: "roll 24s linear infinite"
+        roll: "roll 24s linear infinite",
+        'grow-shrink': 'pulseGrowShrink 2s ease-in-out infinite',
       },
       keyframes: {
         roll: {
-          "0%": {transform: "translateX(100%)"},
-          "100%": {transform: "translateX(-100%)"}
-        }
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" }
+        },
+        pulseGrowShrink: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        },
       },
-      screens:{
+      screens: {
         sxl: "1180px",
         // media (min-width: 1180px){...},
         xs: "480px",
