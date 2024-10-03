@@ -191,7 +191,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <h1 className='font-bold text-lg mt-16'>My socials 📫</h1>
-                <div className='grid grid-cols-2 grid-rows-3 md:grid-cols-4 md:grid-rows-1 gap-6 h-[550px] md:h-[352px]'>
+                <div className='grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-6 h-[550px] md:h-[352px]'>
                     <div className='col-span-1 row-span-1 bg-gradient-to-b from-[#535252] to-[#0c0c0c] hover:opacity-95 hover:cursor-pointer text-white rounded-3xl h-[164px] relative'>
                         <div className='flex flex-col justify-between w-full h-full p-4'>
                             <BsGithub className='text-white w-10 h-10' />
@@ -242,7 +242,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <h1 className='font-bold text-lg mt-16'>My others ✨</h1>
-                <div className='grid grid-cols-2 grid-rows-3 md:grid-cols-4 md:grid-rows-2 gap-6 h-[550px] md:h-[352px]'>
+                <div className='grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-2 gap-6 h-[550px] md:h-[352px]'>
                     <div className='flex col-span-1 row-span-1 bg-white hover:bg-gray-50 hover:cursor-pointer border-2 text-zinc-900 rounded-3xl relative h-[164px] order-3 md:order-5'>
                         <a href='https://nmthong226.vercel.app/'
                             target='_blank'
