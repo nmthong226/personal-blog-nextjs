@@ -26,14 +26,16 @@ import { FaArrowUp } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import { FaBloggerB } from "react-icons/fa";
 import SpotifyWebApi from "spotify-web-api-js";
+import Link from 'next/link';
 
 const spotifyApi = new SpotifyWebApi();
 
 const AboutMe = () => {
     return (
         <div className='flex flex-col lg:flex-row w-full h-full justify-center lg:justify-end bg-white overflow-y-auto'>
-            <div className='flex flex-col h-full lg:w-[30%] sxl:w-1/3 lg:fixed lg:left-0 p-3 xs:p-10 sxl:p-20 max-lg:mt-64'>
+            <div className='flex flex-col h-full lg:w-[30%] sxl:w-1/3 lg:fixed lg:left-0 p-3 xs:p-10 sxl:p-20 max-lg:mt-80'>
                 <div className='max-lg:hidden w-48 h-48 border-[1px] rounded-full items-center justify-center flex hover:cursor-pointer'>
                     <Image src={avatar} alt='avatar' className='w-44 h-44 rounded-full' />
                 </div>
@@ -49,6 +51,12 @@ const AboutMe = () => {
                             <li>🌏 Stayed in HCMC, VietNam</li>
                             <li>🎂 Since 22/06/2003</li>
                         </ul>
+                        <Link
+                            href="/my-blogs"
+                            className="flex items-center justify-center p-2 w-32 bg-zinc-800 text-white rounded-lg mt-12 ">
+                            <FaBloggerB className="mr-2"/>
+                            My blog
+                        </Link>
                     </div>
                 </div>
             </div>
