@@ -29,13 +29,18 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaBloggerB } from "react-icons/fa";
 import SpotifyWebApi from "spotify-web-api-js";
 import Link from 'next/link';
+import { delay, motion } from 'framer-motion';
 
 const spotifyApi = new SpotifyWebApi();
 
 const AboutMe = () => {
     return (
         <div className='flex flex-col lg:flex-row w-full h-full justify-center lg:justify-end bg-white overflow-y-auto'>
-            <div className='flex flex-col h-full lg:w-[30%] sxl:w-1/3 lg:fixed lg:left-0 p-3 xs:p-10 sxl:p-20 max-lg:mt-80'>
+            <motion.div 
+                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 10 }}
+                transition={{ duration: 0.3, delay: 0 }}
+                className='flex flex-col h-full lg:w-[30%] sxl:w-1/3 lg:fixed lg:left-0 p-3 xs:p-10 sxl:p-20 max-lg:mt-80'>
                 <div className='max-lg:hidden w-48 h-48 border-[1px] rounded-full items-center justify-center flex hover:cursor-pointer'>
                     <Image src={avatar} alt='avatar' className='w-44 h-44 rounded-full' />
                 </div>
@@ -54,20 +59,28 @@ const AboutMe = () => {
                         <Link
                             href="/my-blogs"
                             className="flex items-center justify-center p-2 w-32 bg-zinc-800 text-white rounded-lg mt-12 ">
-                            <FaBloggerB className="mr-2"/>
+                            <FaBloggerB className="mr-2" />
                             My blog
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div className='flex flex-col p-3 xs:p-10 sxl:p-20 w-full lg:w-[70%] sxl:w-[60%] h-full gap-6'>
                 <h1 className='font-bold text-lg'>About me 🙋‍♂️</h1>
                 <div className='grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 h-[724px] md:h-[352px] gap-6'>
-                    <div className='flex col-span-1 row-span-2  text-white rounded-3xl relative h-[352px] order-1'>
-                        <Image src={school} alt='school' className='w-full h-full object-cover rounded-2xl' />
+                    <motion.div
+                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.3, delay: 0.1 }}
+                        className='flex col-span-1 row-span-2  text-white rounded-3xl relative h-[352px] order-1'>
+                        <Image src={school} alt='school' className='w-full h-full object-cover rounded-2xl' priority />
                         <div className='flex px-2 justify-center items-center absolute z-10 bg-gray-50 rounded-md text-zinc-600 bottom-0 text-sm m-2 border-2'>📖 Uni</div>
-                    </div>
-                    <div className='col-span-1 row-span-1 bg-zinc-900 text-white rounded-3xl h-[164px] order-2'>
+                    </motion.div>
+                    <motion.div
+                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                        className='col-span-1 row-span-1 bg-zinc-900 text-white rounded-3xl h-[164px] order-2'>
                         <div className='flex flex-col w-full h-full p-2 justify-center items-center'>
                             <p className='text-sm xs:text-xl font-bold text-center whitespace-pre-line flex-shrink-0'>
                                 Obsession{'\n'}
@@ -75,26 +88,26 @@ const AboutMe = () => {
                                 every time.
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className='col-span-1 row-span-1 text-white rounded-3xl order-5 md:order-3'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
-                            <Image src={img_bb} alt='img-bb' className='w-full h-full object-cover rounded-2xl' />
+                            <Image src={img_bb} alt='img-bb' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
                     </div>
                     <div className='col-span-1 row-span-1 text-white rounded-3xl order-4'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
-                            <Image src={gif_cat} alt='img-cat' className='w-full h-full object-cover rounded-2xl' />
+                            <Image src={gif_cat} alt='img-cat' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
                     </div>
                     <div className='col-span-1 row-span-1 bg-zinc-400 text-white rounded-3xl h-[164px] order-5 relative'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
-                            <Image src={img_cancer} alt='img-cancer' className='w-full h-full object-cover rounded-2xl' />
+                            <Image src={img_cancer} alt='img-cancer' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
                         <div className='flex px-2 justify-center items-center absolute z-10 bg-gray-50 rounded-md text-zinc-600 bottom-0 text-sm m-2 border-2'>♋ Cancer</div>
                     </div>
                     <div className='flex col-span-2 row-span-1 md:col-span-2 md:row-span-1 rounded-3xl relative order-6'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
-                            <Image src={img_map} alt='img-map' className='w-full h-full object-fill rounded-2xl' />
+                            <Image src={img_map} alt='img-map' className='w-full h-full object-fill rounded-2xl' priority />
                         </div>
                         <div className='flex absolute w-[14px] h-[14px] left-[50%] top-[30%] rounded-full bg-[#0160C9] border-2 border-white animate-grow-shrink' />
                         <div className='flex absolute px-2 bg-white text-zinc-900 rounded-lg bottom-0 m-2'>HCMC, Vietnam</div>
@@ -103,7 +116,7 @@ const AboutMe = () => {
                 <div className='grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 h-[724px] md:h-[352px] gap-6'>
                     <div className='col-span-1 row-span-1 bg-zinc-400 text-white rounded-3xl h-[164px]'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
-                            <Image src={img_code} alt='img-code' className='w-full h-full object-cover rounded-2xl' />
+                            <Image src={img_code} alt='img-code' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
                     </div>
                     <div className='col-span-1 row-span-1 bg-gray-100 text-zinc-700 border-2 rounded-3xl h-[164px] relative'>
@@ -119,7 +132,7 @@ const AboutMe = () => {
                     </div>
                     <div className='flex col-span-2 row-span-1 rounded-3xl relative h-[164px]'>
                         <div className='flex flex-col w-full h-full justify-center border-2 rounded-2xl items-center'>
-                            <Image src={img_pet} alt='img-map' className='w-full h-full object-cover rounded-2xl' />
+                            <Image src={img_pet} alt='img-map' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
                         <div className='flex absolute px-2 bg-white border-2 text-zinc-900 rounded-lg bottom-0 m-2 text-sm'>❤️ Pet</div>
                     </div>
