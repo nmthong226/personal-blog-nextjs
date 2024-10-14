@@ -36,7 +36,7 @@ const spotifyApi = new SpotifyWebApi();
 const AboutMe = () => {
     return (
         <div className='flex flex-col lg:flex-row w-full h-full justify-center lg:justify-end bg-white overflow-y-auto'>
-            <motion.div 
+            <motion.div
                 animate={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.3, delay: 0 }}
@@ -89,29 +89,45 @@ const AboutMe = () => {
                             </p>
                         </div>
                     </motion.div>
-                    <div className='col-span-1 row-span-1 text-white rounded-3xl order-5 md:order-3'>
+                    <motion.div
+                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                        className='col-span-1 row-span-1 text-white rounded-3xl order-5 md:order-3'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
                             <Image src={img_bb} alt='img-bb' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
-                    </div>
-                    <div className='col-span-1 row-span-1 text-white rounded-3xl order-4'>
+                    </motion.div>
+                    <motion.div
+                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                        className='col-span-1 row-span-1 text-white rounded-3xl order-4'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
                             <Image src={gif_cat} alt='img-cat' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
-                    </div>
-                    <div className='col-span-1 row-span-1 bg-zinc-400 text-white rounded-3xl h-[164px] order-5 relative'>
+                    </motion.div>
+                    <motion.div
+                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                        className='col-span-1 row-span-1 bg-zinc-400 text-white rounded-3xl h-[164px] order-5 relative'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
                             <Image src={img_cancer} alt='img-cancer' className='w-full h-full object-cover rounded-2xl' priority />
                         </div>
                         <div className='flex px-2 justify-center items-center absolute z-10 bg-gray-50 rounded-md text-zinc-600 bottom-0 text-sm m-2 border-2'>♋ Cancer</div>
-                    </div>
-                    <div className='flex col-span-2 row-span-1 md:col-span-2 md:row-span-1 rounded-3xl relative order-6'>
+                    </motion.div>
+                    <motion.div
+                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                        className='flex col-span-2 row-span-1 md:col-span-2 md:row-span-1 rounded-3xl relative order-6'>
                         <div className='flex flex-col w-full h-full justify-center items-center'>
                             <Image src={img_map} alt='img-map' className='w-full h-full object-fill rounded-2xl' priority />
                         </div>
                         <div className='flex absolute w-[14px] h-[14px] left-[50%] top-[30%] rounded-full bg-[#0160C9] border-2 border-white animate-grow-shrink' />
                         <div className='flex absolute px-2 bg-white text-zinc-900 rounded-lg bottom-0 m-2'>HCMC, Vietnam</div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className='grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 h-[724px] md:h-[352px] gap-6'>
                     <div className='col-span-1 row-span-1 bg-zinc-400 text-white rounded-3xl h-[164px]'>
@@ -281,7 +297,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
